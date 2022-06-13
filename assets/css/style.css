@@ -42,7 +42,7 @@ body {
 .game-box {
     display: flex;
     flex-wrap: wrap;
-    height: 24rem;
+    height: 48em;
     width: 60%;
     margin: 0 auto;
     border: 1px solid black;
@@ -110,11 +110,27 @@ body {
 @media screen and (max-width: 576px) {
     .game-box {
         width: 75%;
+        height: 24em;
     }
 }
 
 @media screen and (max-width: 768px) {
     .game-box {
-        width: 75%;
+        width: 70%;
+        height: 24em;
     }
 }
+
+@media screen and (max-width: 992px) {
+    .game-box {
+        width: 70%;
+        height: 36em;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .game-box {
+        height: 36em;
+    }
+}
+
