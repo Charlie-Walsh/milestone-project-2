@@ -1,85 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Card Flip!</title>
     <!--Bootstrap-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" 
-        rel="stylesheet" 
-        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" 
-        crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body>
-
-<!--Page head-->
-  <section id="page-head">
-    <div class="row">
-      <div id="logo-header" class="col-12">
-        <h1 class="logo">Card Flip!</h1>
-      </div>
-      <div class="button-container col-12">
-        <div class="instructions-button text-center prompt">      
-          <button type="button" id="intructions-button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#instructions-modal">
-          Instructions
-          </button>
+  </head>
+  <body>
+    <!--Page head-->
+    <section id="page-head">
+      <div class="row">
+        <div id="logo-header" class="col-12">
+          <h1 class="logo">Card Flip!</h1>
         </div>
-      </div>
-    </div>
-  </section>
-
-<!--Game Area-->
-  <section id="game-area">
-    <div class="row">
-      <div class="game-box col-12">
-
-      </div>
-    </div>
-
-<!--Buttons and scores-->
-
-    <div class="row">
-      <div id="start" class="col-6 text-center">
-        <button type="button" class="btn btn-success btn-lg prompt" id="start-button">Start!</button>
-      </div>
-      <div id="restart" class="col-6 text-center">
-        <button type="button" class="btn btn-danger btn-lg prompt" id="restart-button">Restart</button>
-      </div>
-      
-      <div id="scores" class="col-12 text-center prompt">
-        <p>Matches: <span id="matches-holder"></span> 0/3 <span id="matches-max"></span>
-        Level: <span id="level-holder">1</span></p>
-      </div>
-    </div>
-  </section>
-
-<!--Intructions Modal-->
-
-    <div class="modal fade" id="instructions-modal" tabindex="-1" aria-labelledby="instructions" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title prompt">Instructions</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body prompt">
-              <p>Click the cards and find the matching pairs to score!</p>
-              
-
-            </div>
-            <div class="modal-footer">
-              <button type="button" id="close-button" class="btn btn-secondary prompt" data-bs-dismiss="modal">Close</button>
-            </div>
+        <div class="button-container col-12">
+          <div class="instructions-button text-center prompt">
+            <button type="button" id="intructions-button" class="btn btn-lg" data-bs-toggle="modal" data-bs-target="#instructions-modal"> Instructions </button>
           </div>
         </div>
       </div>
-</body>
-<footer></footer>
-<!--Bootstrap and Popper-->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" 
-    crossorigin="anonymous"></script>
-
+    </section>
+    <!--Game Area-->
+    <div id="game-area">
+      <div class="row">
+        <div class="game-box col-12"></div>
+      </div>
+      <!--Buttons and scores-->
+      <div class="row">
+        <div id="start" class="col-6 text-center">
+          <button type="button" class="btn btn-success btn-lg prompt" id="start-button">Start!</button>
+        </div>
+        <div id="restart" class="col-6 text-center">
+          <button type="button" class="btn btn-danger btn-lg prompt" id="restart-button">Restart</button>
+        </div>
+        <div id="scores" class="col-12 text-center prompt">
+          <p>Matches: <span id="matches-holder"></span> 0/3 <span id="matches-max"></span> Level: <span id="level-holder">1</span>
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--Intructions Modal-->
+    <div class="modal fade" id="instructions-modal" tabindex="-1" aria-labelledby="instructions-modal-heading" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title prompt" id="instructions-modal-heading">Instructions</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body prompt">
+            <p>Click the cards and find the matching pairs to score!</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="close-button" class="btn btn-secondary prompt" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  <footer>insert footer here</footer>
+  <!--Bootstrapjs and Popper-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
 </html>
