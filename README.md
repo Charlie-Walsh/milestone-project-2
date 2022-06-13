@@ -48,4 +48,14 @@
 
 * Card faces will be easily recognisable animal silhouettes for the player to match.
 
+<hr>
+
+## Code
+
+### Libraries
+
+ * Bootstrap
+ * Popper
+ * Google Fonts
+ * Jquery
 
