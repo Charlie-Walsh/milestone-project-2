@@ -33,15 +33,20 @@ body {
     color: #fff;
 }
 
+#intructions-button:hover {
+    background-color: rgb(175, 73, 36);
+}
+
 /* Game area */
 
 .game-box {
     display: flex;
     flex-wrap: wrap;
-    height: 600px;
-    width: 75%;
+    height: 24rem;
+    width: 60%;
     margin: 0 auto;
     border: 1px solid black;
+    background-color: #fff;
 }
 
 /* Game buttons and scores */
@@ -50,11 +55,66 @@ body {
     margin-top: 30px;
 }
 
+#start-button:hover {
+    border: 1px solid #fff;
+}
+
 #restart {
     margin-top: 30px;
+}
+
+#restart-button:hover {
+    border: 1px solid #fff;
 }
 
 #scores {
     margin-top: 20px;
     color: #fff;
+}
+
+/* Modal */
+
+.modal-header {
+    background-color: orangered;
+    border: 2px solid #fff;
+}
+
+.modal-body {
+    background-color: orangered;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.modal-footer {
+    background-color: orangered;
+    border: 2px solid #fff;
+}
+
+.modal-title {
+    color: #fff;
+    text-align: center;
+}
+
+#close-button {
+    background-color: #fff;
+    color: orangered;
+    border: 1px solid #fff;
+}
+
+#close-button:hover {
+    background-color: rgb(218, 218, 218);
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 576px) {
+    .game-box {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .game-box {
+        width: 75%;
+    }
 }

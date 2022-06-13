@@ -37,13 +37,17 @@
 
       </div>
     </div>
+
+<!--Buttons and scores-->
+
     <div class="row">
-      <div id="restart" class="col-6 text-center">
-        <button type="button" class="btn btn-danger prompt" id="restart-button">Restart</button>
-      </div>
       <div id="start" class="col-6 text-center">
-        <button type="button" class="btn btn-success prompt" id="start-button">Start!</button>
+        <button type="button" class="btn btn-success btn-lg prompt" id="start-button">Start!</button>
       </div>
+      <div id="restart" class="col-6 text-center">
+        <button type="button" class="btn btn-danger btn-lg prompt" id="restart-button">Restart</button>
+      </div>
+      
       <div id="scores" class="col-12 text-center prompt">
         <p>Matches: <span id="matches-holder"></span> 0/3 <span id="matches-max"></span>
         Level: <span id="level-holder">1</span></p>
@@ -57,15 +61,16 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title">Modal title</h5>
+              <h5 class="modal-title prompt">Instructions</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body">
-              <p>Modal body text goes here.</p>
+            <div class="modal-body prompt">
+              <p>Click the cards and find the matching pairs to score!</p>
+              
+
             </div>
             <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
+              <button type="button" id="close-button" class="btn btn-secondary prompt" data-bs-dismiss="modal">Close</button>
             </div>
           </div>
         </div>
