@@ -43,3 +43,18 @@ body {
     margin: 0 auto;
     border: 1px solid black;
 }
+
+/* Game buttons and scores */
+
+#start {
+    margin-top: 30px;
+}
+
+#restart {
+    margin-top: 30px;
+}
+
+#scores {
+    margin-top: 20px;
+    color: #fff;
+}
