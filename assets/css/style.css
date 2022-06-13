@@ -1,1 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Prompt:ital@0;1&display=swap');
+
+/* Typography*/
+
+.prompt {
+    font-family: "Prompt", sans-serif;
+}
+
+/* Page */
+
+.logo {
+    font-family: "Fredoka One", sans-serif;
+}
+
+/* Game area */
+
+
+.container {
+    width: 100%;
+    margin: 0, auto;
+}
+
+.game-box {
+    display: flex;
+    flex-wrap: wrap;
+    height: 600px;
+    width: 100%;
+    border: 1px solid black;
+}
