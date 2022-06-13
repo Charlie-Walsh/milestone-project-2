@@ -14,20 +14,45 @@
 </head>
 <body>
 
-    <div class="container">
+<!--Page head-->
+  <section id="page-head">
+    <div class="row">
+      <div id="logo-header" class="col-12">
         <h1 class="logo">Card Flip!</h1>
-        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#instructions-modal">
-            Instructions
+      </div>
+      <div class="button-container col-12">
+        <div class="instructions-button text-center prompt">      
+          <button type="button" id="intructions-button" class="btn btn-lg bg-custom" data-bs-toggle="modal" data-bs-target="#instructions-modal">
+          Instructions
           </button>
-        <div class="game-box"></div>
-        <button type="button" class="btn btn-danger">reset</button>
-        <button type="button" class="btn btn-success">start</button>
-        <div>
-          <p>Matches: <span id="matches-holder"></span> / <span id="matches-max"></span>
-          Level: <span id="level-holder"></span></p>
         </div>
+      </div>
     </div>
+  </section>
+
+<!--Game Area-->
+  <section id="game-area">
+    <div class="row">
+      <div class="game-box col-12">
+
+      </div>
+    </div>
+    <div class="row">
+      <div id="restart" class="col-6 text-center">
+        <button type="button" class="btn btn-danger prompt" id="restart-button">Restart</button>
+      </div>
+      <div id="start" class="col-6 text-center">
+        <button type="button" class="btn btn-success prompt" id="start-button">Start!</button>
+      </div>
+      <div id="scores" class="col-12 text-center">
+        <p>Matches: <span id="matches-holder"></span> 0/3 <span id="matches-max"></span>
+        Level: <span id="level-holder">1</span></p>
+      </div>
+    </div>
+  </section>
+
 <!--Intructions Modal-->
+
     <div class="modal fade" id="instructions-modal" tabindex="-1" aria-labelledby="instructions" aria-hidden="true">
         <div class="modal-dialog">
           <div class="modal-content">

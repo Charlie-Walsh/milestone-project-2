@@ -1,29 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Prompt:ital@0;1&display=swap');
 
+/* General */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(65, 76, 180);
+}
+
 /* Typography*/
 
 .prompt {
     font-family: "Prompt", sans-serif;
 }
 
-/* Page */
+/* Page Head*/
 
-.logo {
+#logo-header {
     font-family: "Fredoka One", sans-serif;
+    color: #fff;
+    text-align: center;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.instructions-button {
+    margin: 30px;
+}
+
+#intructions-button {
+    background-color: orangered;
+    color: #fff;
 }
 
 /* Game area */
-
-
-.container {
-    width: 100%;
-    margin: 0, auto;
-}
 
 .game-box {
     display: flex;
     flex-wrap: wrap;
     height: 600px;
-    width: 100%;
+    width: 75%;
+    margin: 0 auto;
     border: 1px solid black;
 }
