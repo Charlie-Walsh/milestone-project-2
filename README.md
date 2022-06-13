@@ -59,6 +59,10 @@
  * Google Fonts
  * Jquery
 
-### Testing
+ <hr>
 
+## Testing
 
+### Responsiveness
+
+* I have been testing responsiveness from the bottom up. Having previewed the page ubove 1200px throughout development it makes sense to test the extremities first and work up through the betweens from there.
