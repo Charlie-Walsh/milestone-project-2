@@ -1,0 +1,25 @@
+{
+  "name": "milestone-project-2",
+  "version": "1.0.0",
+  "description": "<h1 align=center>Card Flip!</h1>",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Charlie-Walsh/milestone-project-2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Charlie-Walsh/milestone-project-2/issues"
+  },
+  "homepage": "https://github.com/Charlie-Walsh/milestone-project-2#readme",
+  "devDependencies": {
+    "jest": "^28.1.1"
+  },
+  "dependencies": {
+    "jest-environment-jsdom": "^28.1.1"
+  }
+}
