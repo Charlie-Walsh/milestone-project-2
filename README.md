@@ -48,6 +48,11 @@
 
 * Card faces will be easily recognisable animal silhouettes for the player to match.
 
+* Images sourced from:
+    * [Open Clipart](http://openclipart.org)
+    * [Vecteezy](http://vecteezy.com)
+    * [Public Domain Pictures](http://publicdomainpictures.net)
+
 <hr>
 
 ## Code

@@ -19,4 +19,7 @@ describe("Does the game object contain the corect keys", () => {
     test("Does the matches key exist", () => {
         expect("matches" in game).toBe(true);
     });
+    test("Does the level key exist", () => {
+        expect("level" in game).toBe(true);
+    });
 });
