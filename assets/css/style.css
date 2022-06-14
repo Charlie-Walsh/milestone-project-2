@@ -1,136 +1,135 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Prompt:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Fredoka+One&family=Prompt:ital@0;1&display=swap");
 
 /* General */
 
 body {
-    margin: 0;
-    padding: 0;
-    background-color: rgb(65, 76, 180);
+  margin: 0;
+  padding: 0;
+  background-color: rgb(65, 76, 180);
 }
 
 /* Typography*/
 
 .prompt {
-    font-family: "Prompt", sans-serif;
+  font-family: "Prompt", sans-serif;
 }
 
 /* Page Head*/
 
 #logo-header {
-    font-family: "Fredoka One", sans-serif;
-    color: #fff;
-    text-align: center;
-    margin: 0 auto;
-    padding: 30px;
+  font-family: "Fredoka One", sans-serif;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 30px;
 }
 
 .instructions-button {
-    margin: 30px;
+  margin: 30px;
 }
 
 #intructions-button {
-    background-color: orangered;
-    color: #fff;
+  background-color: orangered;
+  color: #fff;
 }
 
 #intructions-button:hover {
-    background-color: rgb(175, 73, 36);
+  background-color: rgb(175, 73, 36);
 }
 
 /* Game area */
 
 .game-box {
-    display: flex;
-    flex-wrap: wrap;
-    height: 48em;
-    width: 60%;
-    margin: 0 auto;
-    border: 1px solid black;
-    background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  height: 48em;
+  width: 60%;
+  margin: 0 auto;
+  border: 1px solid black;
+  background-color: #fff;
 }
 
 /* Game buttons and scores */
 
 #start {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 #start-button:hover {
-    border: 1px solid #fff;
+  border: 1px solid #fff;
 }
 
 #restart {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 #restart-button:hover {
-    border: 1px solid #fff;
+  border: 1px solid #fff;
 }
 
 #scores {
-    margin-top: 20px;
-    color: #fff;
+  margin-top: 20px;
+  color: #fff;
 }
 
 /* Modal */
 
 .modal-header {
-    background-color: orangered;
-    border: 2px solid #fff;
+  background-color: orangered;
+  border: 2px solid #fff;
 }
 
 .modal-body {
-    background-color: orangered;
-    color: #fff;
-    border: 2px solid #fff;
+  background-color: orangered;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .modal-footer {
-    background-color: orangered;
-    border: 2px solid #fff;
+  background-color: orangered;
+  border: 2px solid #fff;
 }
 
 .modal-title {
-    color: #fff;
-    text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 #close-button {
-    background-color: #fff;
-    color: orangered;
-    border: 1px solid #fff;
+  background-color: #fff;
+  color: orangered;
+  border: 1px solid #fff;
 }
 
 #close-button:hover {
-    background-color: rgb(218, 218, 218);
+  background-color: rgb(218, 218, 218);
 }
 
 /* Media Queries */
 
 @media screen and (max-width: 576px) {
-    .game-box {
-        width: 75%;
-        height: 24em;
-    }
+  .game-box {
+    width: 75%;
+    height: 24em;
+  }
 }
 
 @media screen and (max-width: 768px) {
-    .game-box {
-        width: 70%;
-        height: 24em;
-    }
+  .game-box {
+    width: 70%;
+    height: 24em;
+  }
 }
 
 @media screen and (max-width: 992px) {
-    .game-box {
-        width: 70%;
-        height: 36em;
-    }
+  .game-box {
+    width: 70%;
+    height: 36em;
+  }
 }
 
 @media screen and (max-width: 1200px) {
-    .game-box {
-        height: 36em;
-    }
+  .game-box {
+    height: 36em;
+  }
 }
-
