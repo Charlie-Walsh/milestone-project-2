@@ -2,7 +2,6 @@
 
 <p>Card Flip! is a simple card memory game designed for children. Primarily this will be designed for large to medium device sizes as this is what a young child would typically use, however it will be responsive across common device sizes. </p>
 
-<hr>
 
 ## Target Audience
 
@@ -63,6 +62,10 @@
  * Popper
  * Google Fonts
  * Jquery
+
+ ### Tutorials
+
+ * Javascript is being heavily influenced by [Dev Ed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=580s)'s javascript memory card game. This tutorial has helped with my planning of how to get the base game to work, specifically, populating the game board. I want to expand on the mechanics to increase difficulty slightly as the game progresses.
 
  <hr>
 

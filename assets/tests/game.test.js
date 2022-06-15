@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const {game} = require("../js/game") 
+const {game, newGame} = require("../js/game") 
 
 beforeAll (() => {
     let fs = require("fs");
@@ -21,5 +21,19 @@ describe("Does the game object contain the corect keys", () => {
     });
     test("Does the level key exist", () => {
         expect("level" in game).toBe(true);
+    });
+});
+
+describe("newGame works correctly", () => {
+    beforeAll(() => {
+        game.matches = 3;
+        game.level = 2;
+        newGame();
+    })
+    test("Does newGame reset matches in game", () => {
+        expect(game.matches).toEqual(0);
+    });
+    test("does newGame reset level in game", () => {
+        expect(game.level).toEqual(1);
     });
 });
