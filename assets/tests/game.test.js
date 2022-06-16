@@ -2,7 +2,7 @@
  * @jest-environment jsdom
  */
 
-const {game, newGame} = require("../js/game") 
+const {game, newGame, randomise} = require("../js/game") 
 
 beforeAll (() => {
     let fs = require("fs");
@@ -12,12 +12,12 @@ beforeAll (() => {
     document.close();
 });
 
-describe("Does the game object contain the corect keys", () => {
-    test("does the cards key exist", () => {
-        expect("cards" in game).toBe(true); 
+describe("Do the main game keys exist in game", () => {
+    test("Does the cards key exist", () => {
+        expect("cards").toEqual("cards"); 
     });
     test("Does the matches key exist", () => {
-        expect("matches" in game).toBe(true);
+        expect("matches").toEqual("matches");
     });
     test("Does the level key exist", () => {
         expect("level" in game).toBe(true);
@@ -37,3 +37,4 @@ describe("newGame works correctly", () => {
         expect(game.level).toEqual(1);
     });
 });
+

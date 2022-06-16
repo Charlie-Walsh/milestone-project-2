@@ -42,6 +42,8 @@ body {
 .game-box {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   height: 48em;
   width: 60%;
   margin: 0 auto;
@@ -51,11 +53,20 @@ body {
 
 .card {
   width: 150px;
-  height: 200px;
+  height: 150px;
+  position: relative;
 }
 
 .card-back {
   background-image: url("/assets/images/card-back-min.png");
+  background-position: center;
+  position: absolute;
+}
+
+.card-face {
+  background-position: center;
+  background-size: cover;
+  position: absolute;
 }
 
 /* Game buttons and scores */
