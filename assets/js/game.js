@@ -24,7 +24,7 @@ const game = {cards: [
 
     ],
     pairsFound: 0,
-    back: {name: 'back', image: '../assets/images/card-back.png'}
+    back: {name: 'back', image: '../assets/images/card-back.png'},
 };
 
 // Starting the game 
@@ -42,21 +42,15 @@ function randomise() {
 
 //Generate card HTML 
 function generateCards() {
+
     const cardData = randomise();
-    cardData.forEach(item => {
-        const card = document.createElement("div");
-        const back = document.createElement("img");
-        const face = document.createElement("img");
+    for (i = 0; i < cardData.length; i++) {
+        const card = document.createElement("img");
         card.classList = "card";
-        face.classList = "face";
-        back.classList = "back";
-        back.src = game.back.image;
+        card.setAttribute('data-id', i);
+        card.src = game.back.image;
         gameArea.appendChild(card);
-        card.appendChild(back);
-        card.appendChild(face);
-    });
+    };
 };
-
 generateCards();
-
-module.exports = {game, newGame, randomise};
+module.exports = {game, newGame, randomise, generateCards};

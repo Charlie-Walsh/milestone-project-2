@@ -2,15 +2,8 @@
  * @jest-environment jsdom
  */
 
-const {game, newGame, randomise} = require("../js/game") 
-
-beforeAll (() => {
-    let fs = require("fs");
-    let fileContents = fs.readFileSync("index.html", "utf-8");
-    document.open();
-    document.write(fileContents);
-    document.close();
-});
+const { default: JSDOMEnvironment } = require("jest-environment-jsdom");
+const {game, newGame, randomise, generateCards} = require("../js/game") 
 
 describe("Do the main game keys exist in game", () => {
     test("Does the cards key exist", () => {
@@ -35,6 +28,16 @@ describe("newGame works correctly", () => {
     });
     test("does newGame reset level in game", () => {
         expect(game.level).toEqual(1);
+    });
+});
+
+describe("generateCards creates cards' HTML", () => {
+    beforeEach(() => {
+        document.body.innerHTML = "<div class='game-box'> </div>";
+        generateCards();
+    })
+    test("Does the function create images in the game area", () => {
+        expect(document.getElementsByTagName("img").length).toBe(20);
     });
 });
 
