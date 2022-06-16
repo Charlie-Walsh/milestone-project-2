@@ -58,14 +58,15 @@ body {
 }
 
 .card-back {
-  background-image: url("/assets/images/card-back-min.png");
   background-position: center;
-  position: absolute;
 }
 
 .card-face {
   background-position: center;
   background-size: cover;
+}
+
+.card-back, .card-face {
   position: absolute;
 }
 

@@ -30,8 +30,8 @@ function generateCards() {
     const cardData = randomise();
     cardData.forEach(item => {
         const card = document.createElement("div");
-        const face = document.createElement("img");
         const back = document.createElement("img");
+        const face = document.createElement("img");
         card.classList = "card";
         face.classList = "face";
         back.classList = "back";
