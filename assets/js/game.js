@@ -1,15 +1,30 @@
 //Varaibles
 const gameArea = document.querySelector(".game-box");
 const game = {cards: [
-        {name: 'bird', image: '../assets/images/bird-min.jpg'},
+        {name: 'bird', image: '../assets/images/bird-min.png'},
         {name: 'dog', image: '../assets/images/dog-min.png'},
-        {name: 'cat', image: '../assets/images/cat-min.jpg'},
-        {name: 'bird', image: '../assets/images/bird-min.jpg'},
+        {name: 'cat', image: '../assets/images/cat-min.png'},
+        {name: 'horse', image: '../assets/images/horse-min.png'},
+        {name: 'mouse', image: '../assets/images/mouse-min.png'},
+        {name: 'cow', image: '../assets/images/cow-min.png'},
+        {name: 'duck', image: '../assets/images/duck-min.png'},
+        {name: 'elephant', image: '../assets/images/elephant-min.png'},
+        {name: 'sheep', image: '../assets/images/sheep-min.png'},
+        {name: 'squirrel', image: '../assets/images/squirrel-min.png'},
+        {name: 'bird', image: '../assets/images/bird-min.png'},
         {name: 'dog', image: '../assets/images/dog-min.png'},
-        {name: 'cat', image: '../assets/images/cat-min.jpg'},
+        {name: 'cat', image: '../assets/images/cat-min.png'},
+        {name: 'horse', image: '../assets/images/horse-min.png'},
+        {name: 'mouse', image: '../assets/images/mouse-min.png'},
+        {name: 'cow', image: '../assets/images/cow-min.png'},
+        {name: 'duck', image: '../assets/images/duck-min.png'},
+        {name: 'elephant', image: '../assets/images/elephant-min.png'},
+        {name: 'sheep', image: '../assets/images/sheep-min.png'},
+        {name: 'squirrel', image: '../assets/images/squirrel-min.png'},
+
     ],
-    matches: 0,
-    level: 1,
+    pairsFound: 0,
+    back: {name: 'back', image: '../assets/images/card-back.png'}
 };
 
 // Starting the game 
@@ -25,7 +40,7 @@ function randomise() {
     return cardData;
 }
 
-//Generate card HTML
+//Generate card HTML 
 function generateCards() {
     const cardData = randomise();
     cardData.forEach(item => {
@@ -35,7 +50,7 @@ function generateCards() {
         card.classList = "card";
         face.classList = "face";
         back.classList = "back";
-        face.src = item.image;
+        back.src = game.back.image;
         gameArea.appendChild(card);
         card.appendChild(back);
         card.appendChild(face);

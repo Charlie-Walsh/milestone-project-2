@@ -65,7 +65,12 @@
 
  ### Tutorials
 
- * Javascript is being heavily influenced by [Dev Ed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=580s)'s javascript memory card game. This tutorial has helped with my planning of how to get the base game to work, specifically, populating the game board. I want to expand on the mechanics to increase difficulty slightly as the game progresses.
+ * Javascript is being heavily influenced by [Dev Ed](https://www.youtube.com/watch?v=-tlb4tv4mC4&t=580s)'s javascript memory card game. This tutorial has helped with my planning of how to get the base game to work, specifically, populating the game board.
+
+### Bugs
+
+* .appChild() was not working due to a null value.
+    * Had my js script linked in the head of my index.html, which meant it was loading before the HTML existed. I could either use defer to correct this or move the script to the bottom of the page. I decided to move the script to avoid any further issues.
 
  <hr>
 
