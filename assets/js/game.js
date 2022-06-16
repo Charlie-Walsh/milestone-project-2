@@ -27,10 +27,10 @@ const game = {cards: [
     back: {name: 'back', image: '../assets/images/card-back.png'},
 };
 
-// Starting the game 
+// Starting a new game 
 function newGame() {
-    game.matches = 0
-    game.level = 1
+    game.pairsFound = 0
+    generateCards();
 };
 
 //Randomise
@@ -52,5 +52,5 @@ function generateCards() {
         gameArea.appendChild(card);
     };
 };
-generateCards();
-module.exports = {game, newGame, randomise, generateCards};
+
+module.exports = {game, newGame, randomise};
