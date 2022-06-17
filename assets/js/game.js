@@ -1,5 +1,5 @@
 //Varaibles
-const gameArea = document.querySelector(".game-box");
+const gameArea = document.querySelector("#game-area");
 const game = {cards: [
         {name: 'bird', image: '../assets/images/bird-min.png'},
         {name: 'dog', image: '../assets/images/dog-min.png'},
@@ -30,7 +30,6 @@ const game = {cards: [
 // Starting a new game 
 function newGame() {
     game.pairsFound = 0
-    generateCards();
 };
 
 //Randomise
@@ -44,13 +43,14 @@ function randomise() {
 function generateCards() {
 
     const cardData = randomise();
-    for (i = 0; i < cardData.length; i++) {
+    cardData.forEach((item, index) => {
+        console.log(item);
         const card = document.createElement("img");
         card.classList = "card";
-        card.setAttribute('data-id', i);
+        card.setAttribute('data-id', index);
         card.src = game.back.image;
         gameArea.appendChild(card);
-    };
+    });
 };
 
-module.exports = {game, newGame, randomise};
+module.exports = {game, gameArea, newGame, randomise, generateCards};

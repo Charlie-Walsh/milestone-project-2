@@ -1,6 +1,9 @@
 /**
  * @jest-environment jsdom
  */
+
+ const {game, gameArea, newGame, randomise, generateCards} = require("../js/game");
+
 beforeEach(() => {
     const fs = require("fs");
     let fileContents = fs.readFileSync("index.html", "utf-8");
@@ -8,8 +11,6 @@ beforeEach(() => {
     document.write(fileContents);
     document.close();
 });
-
-const {game, newGame, randomise} = require("../js/game") 
 
 describe("Do the main game keys exist in game", () => {
     test("Does the cards key exist", () => {
@@ -21,7 +22,7 @@ describe("Do the main game keys exist in game", () => {
 });
 
 describe("newGame works correctly", () => {
-    beforeEach(() => {
+    beforeEach(() => { 
         game.pairsFound = 3;
         newGame();
     })

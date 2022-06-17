@@ -69,6 +69,8 @@
 
 * .appChild() was not working due to a null value.
     * Had my js script linked in the head of my index.html, which meant it was loading before the HTML existed. I could either use defer to correct this or move the script to the bottom of the page. I decided to move the script to avoid any further issues.
+* Having fixed the bug above it has moved into the jest testing suite.
+    * I can find no solution to this in what amounts to about 12hrs of searching and speaking to two tutors. It is preventing me from making further unit test with jest as the appendChild is within the lynchpin function of the game. I will have to test manually with console.logs from now on.
 
  <hr>
 
